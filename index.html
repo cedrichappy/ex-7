@@ -1,65 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToBeFlex</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>formulaire d'inscription</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" >
 </head>
-
 <body>
-    <!-- ajout du conteneur principal + 3 blocks -->
+<!-- formulaire identité -->
+<form class="container" method="POST" action="">
+    
+        <fieldset class="mail">
+            <legend class="titleIdentity">Votre identité</legend>
+            <ol>
+                <li><label for="name">Nom</label> : <input id="name" type="text" name="name" placeholder="Nom"/></li>
+                <li><label for="firstName">Prénom</label> : <input id="firstName" type="text" name="firstName" placeholder="Prénom"/></li>
+                <li><label for="mailAddress">Adresse mail</label> : <input id="mailAddress" type="text" name="mailAddress" placeholder="Adresse mail"/></li>
+            </ol>
+        </fieldset>
+    
+<!-- formulaire adresse -->
+    
+        <fieldset class="address">
+            <legend class="titleAddress">Votre adresse de livraison</legend>
+            <ol>
+                <li><label for="address">Adresse</label> : <textarea id="address" name="address" rows="5" cols="15"></textarea></li>
+                <li><label for="cityNumber">Code postal</label> : <input id="cityNumber" type="cityNumber" name="cityNumber" placeholder="Code postal"/></li>
+                <li><label for="city">Ville</label> : <input id="city" type="text" name="city" placeholder="Ville"/></li>
+            </ol>
+        </fieldset>    
+    
+<!-- formulaire règlement -->
+    
+        <fieldset class="card">
+            <legend class="card">Information de règlement</legend>
+            <ol>
+                <li>Type de carte bancaire
+                    <div>
+                        <input type="radio" id="visa" class="visa" name="card" value="visa">
+                        <label for="visa">VISA</label>
+                    </div>
+                    <div>
+                        <input id="mastercard" type="radio" checked class="mastercard" name="card" value="mastercard">
+                        <label for="mastercard">Mastercard</label>
+                    </div>
+                    
+                </li>
+                <li><label for="cardNumber">Numéro de carte</label> : <input id="cardNumber" type="text" name="cardNumber" placeholder="Numéro de carte"/></li>
+                <li><label for="securityCode">Code de sécurité</label> : <input id="securityCode" type="text" name="securityCode" placeholder="Code de sécurité"/></li>
+                <li><label for="holderName">Nom du titulaire</label> : <input id="holderName" type="text" name="holderName" placeholder="Nom du titulaire"/></li>
+            </ol>
+        </fieldset>    
+    
 
-    <div class="contener1">
-        <div class="block1">
-            <fieldset>
-                <legend>Votre identité</legend>
-            </fieldset>
-            <ol>
-                <li>Nom :</li>
-                <div class="un">Nom</div>
-                <li>Prenom :</li>
-                <div class="un">Prenom</div>
-                <li>Adresse mail :</li>
-                <div class="un">Adresse mail</div>
-            </ol>
-        </div>
-        <div class="block2">
-            <fieldset>
-                <legend>Adresse de livraison</legend>
-            </fieldset>
-            <ol>
-                <li>Adresse :</li>
-                <div class="Btwo"></div>
-                <li>Code postal</a></li>
-                <div class="Bdeux">Code postal</div>
-                <li>Ville</li>
-                <div class="Bdeux">Ville</div>
-            </ol>
-        </div>
-        <div class="block3">
-            <fieldset>
-                <legend>Information de règlement</legend>
-            </fieldset>
-            <ol>
-                <li>Type de carte :</li>
-                <ul>
-                    <li class="listBlock3">VISA</li>
-                    <li class="listBlock3">MASTERCARD</li>
-                </ul>
-                <li>Numéro de carte :</li>
-                <div class="Btrois">Numéro de carte</div>
-                <li>Code de sécurité :</li>
-                <div class="Btrois">Code de sécurité</div>
-                <li>Nom du titulaire :</li>
-                <div class="Btrois">Nom du titulaire </div>
-            </ol>
-        </div>
-        <div class="contener2">
-            <p>J'achète !</p>
-        </div>
+    <!-- bouton de validation -->
+        <p><button type="submit">J'achète</button></p> 
+  </form>
 </body>
-
 </html>

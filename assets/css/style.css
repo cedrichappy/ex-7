@@ -1,68 +1,20 @@
-.contener1 {
-    width: 100%;
-
+.card{
+    background-color: rgb(219, 10, 91);
 }
-
-.titre1 {}
-
-.block1 {
-    background-color: #2574a9;
-    width: 100%;
-    height: 250px;
+.address{
+background-color: rgb(154, 18, 179);
 }
-
-.un {
-    width: 10%;
-    height: 25px;
-    background-color: white;
-    color: gray;
-}
-
-.titre2 {}
-
-.block2 {
-    background-color: #9a12b3;
-    width: 100%;
-    height: 300px;
-}
-
-.Btwo {
-    width: 5%;
-    height: 70px;
-    background-color: white;
-    color: gray;
-}
-
-.titre3 {}
-
-.Bdeux {
-    width: 10%;
-    height: 25px;
-    background-color: white;
-    color: gray;
-}
-
-.block3 {
-    background-color: #db0a5b;
-    width: 100%;
-    height: 300px;
-
-}
-
-.listBlock3 {
-    color: white;
-}
-
-.Btrois {
-    width: 10%;
-    height: 25px;
-    background-color: white;
-    color: gray;
+.mail{
+    background-color: rgb(37, 116, 169);
 }
 
 
-.contener2 {
-    width: 5%;
-    height: 25px;
-    background-color: wheat;
+.titleIdentity{
+    background-color: rgb(37, 116, 169);
+}
+.titleAddress{
+    background-color: rgb(154, 18, 179);
+}
+.card {
+    background-color: rgb(219, 10, 91);
 }
